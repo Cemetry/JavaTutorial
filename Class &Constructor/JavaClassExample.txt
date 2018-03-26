@@ -1,0 +1,129 @@
+//java parameterize constructor
+
+//First.java class
+
+package first;
+
+
+public class First {
+
+
+    
+    public static void main(String[] args) {
+      
+        student s = new student(1,"tanim");
+        s.display();
+        student s1 = new student(2,"Nahid");
+        s1.display();
+      
+    }
+    
+}
+
+//student.java class
+
+
+
+
+package first;
+
+
+public class student {
+int id;
+String name;
+student(int i,String n){
+    id = i;
+    name = n;
+}
+void display()
+{
+    System.out.println(id+" "+name);
+}
+
+ 
+}
+
+
+
+
+//Java class and Object
+
+/**First.java**/
+
+
+
+package first;
+
+
+public class First {
+
+
+    
+    public static void main(String[] args) {
+      
+     student s = new student();
+     System.out.println(s.id);
+     System.out.println(s.name);
+    }
+    
+}
+
+
+
+//End of First.java 
+
+
+/**student.java **/
+
+
+package first;
+
+
+public class student {
+int id;
+String name;
+
+
+ 
+}
+
+
+
+///Java constructor 
+
+/**First.java**/
+
+
+package first;
+
+
+public class First {
+
+
+    
+    public static void main(String[] args) {
+      student s = new student();
+    }
+    
+}
+
+/**student.java**/
+
+
+package first;
+
+
+public class student {
+student()
+{
+    System.out.println("Constructor  created");
+}
+
+
+ 
+}
+
+
+
+
+
