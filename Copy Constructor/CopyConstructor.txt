@@ -1,0 +1,44 @@
+//**First.java **/
+
+package first;
+
+
+public class First {
+
+
+    
+    public static void main(String[] args) {
+      
+        student obj = new student(113,"Tanim Ahmed");
+        student obj1 = new student(obj);
+        obj.display();
+        obj1.display();
+    }
+    
+}
+
+
+//**student.java**/
+
+
+package first;
+
+
+public class student {
+int id;
+String name;
+student(int i,String n)
+{
+    id = i;
+    name = n;
+}
+ student (student s)
+ {
+     id =  s.id;
+     name = s.name;
+ }
+ void display()
+ {
+     System.out.println(id+" "+name);
+ }
+}
