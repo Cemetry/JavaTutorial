@@ -1,0 +1,59 @@
+//Thread
+
+
+package first;
+
+import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.Collections;
+
+
+
+
+public class First {
+
+
+    
+    public static void main(String[] args)throws InterruptedException   {
+
+        A obj = new A();
+        obj.start();
+        for(int i = 0;i<10;i++)
+        {
+            System.out.println("Tanim Bijoy");
+            try
+            {
+              Thread.sleep(1000);
+            }
+            catch(InterruptedException e)
+            {
+                  e.printStackTrace();
+            }
+        }
+    
+    }
+    
+}
+
+class A extends Thread{
+    @Override 
+   public  void run()
+    {
+        for(int i = 0 ;i<10;i++)
+        {
+            System.out.println("Tanim");
+            try
+            {
+                
+                       Thread.sleep(500);
+                
+            }
+            catch(InterruptedException e)
+            {
+                e.printStackTrace();
+            }
+        }
+    }
+            
+            
+}
